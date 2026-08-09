@@ -1,0 +1,31 @@
+{
+  "education": "Working Professional",
+  "career": {
+    "title": "Certifications",
+    "icon": "fa-solid fa-certificate",
+    "description": "Upgrade skills quickly with focused professional certifications.",
+    "category": "Upskilling",
+    "overview": "Certifications are perfect for rapid upskilling and credibility.",
+    "eligibility": "Relevant work experience or academic grounding.",
+    "skills": [
+      "Specialized knowledge",
+      "Continuous learning",
+      "Practical application"
+    ],
+    "opportunities": [
+      "Analyst",
+      "Specialist",
+      "Consultant"
+    ],
+    "salary": "₹5 - 20 LPA",
+    "exams": [
+      "AWS",
+      "Google",
+      "Microsoft"
+    ],
+    "colleges": [],
+    "roadmap": "Choose one domain, complete the course and apply it in projects.",
+    "futureScope": "Excellent for staying market relevant and competitive.",
+    "image": "images/hero/hero.png"
+  }
+}

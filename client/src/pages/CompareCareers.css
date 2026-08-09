@@ -1,0 +1,236 @@
+.compare-container {
+  width: 95%;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+}
+
+.compare-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.compare-header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 12px;
+}
+
+.compare-header .highlight {
+  color: #4F46E5;
+}
+
+.compare-header p {
+  font-size: 16px;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* SELECTORS BAR */
+.selectors-bar {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.08);
+  border: 1px solid #E2E8F0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.selector-box label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #4F46E5;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.compare-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0F172A;
+  outline: none;
+  background: #ffffff;
+  transition: var(--transition-fast);
+}
+
+.compare-select:focus {
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.10);
+}
+
+.vs-badge {
+  background: var(--gradient-primary, linear-gradient(135deg, #2563EB 0%, #4F46E5 50%, #7C3AED 100%));
+  color: white;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+}
+
+/* MATRIX CARD */
+.compare-matrix-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.08);
+  border: 1px solid #E2E8F0;
+  overflow: hidden;
+}
+
+.matrix-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.matrix-row:last-child {
+  border-bottom: none;
+}
+
+.feature-cell {
+  padding: 24px;
+  background: #F8FAFF;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0F172A;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #E2E8F0;
+}
+
+.career-cell {
+  padding: 24px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.career-cell.cell-a {
+  border-right: 1px solid #E2E8F0;
+}
+
+.header-row {
+  background: #ffffff;
+}
+
+.header-row .career-cell {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.c-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.header-row h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.c-tag {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+  color: #4F46E5;
+  border: 1px solid #C7D2FE;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.val-salary {
+  font-size: 18px;
+  font-weight: 800;
+  color: #10B981;
+}
+
+.val-demand {
+  font-size: 16px;
+  font-weight: 800;
+  color: #4F46E5;
+}
+
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cmp-skill {
+  background: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.highlight-text {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+  border-left: 3px solid #4F46E5;
+  font-weight: 600;
+  color: #1E1B4B;
+}
+
+.footer-row .career-cell {
+  text-align: center;
+}
+
+.btn-cmp-roadmap {
+  background: var(--gradient-primary, linear-gradient(135deg, #2563EB, #4F46E5, #7C3AED));
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.25);
+  width: 100%;
+  transition: var(--transition-fast);
+}
+
+.btn-cmp-roadmap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.30);
+}
+
+.compare-loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: #64748B;
+}
+
+@media (max-width: 900px) {
+  .selectors-bar {
+    grid-template-columns: 1fr;
+  }
+  .vs-badge {
+    margin: 0 auto;
+  }
+  .matrix-row {
+    grid-template-columns: 1fr;
+  }
+}
+

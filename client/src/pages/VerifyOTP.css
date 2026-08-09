@@ -1,0 +1,51 @@
+.registered-email-badge {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+  border: 1px solid #C7D2FE;
+  padding: 10px 16px;
+  border-radius: 12px;
+  color: #1E1B4B;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 24px 0;
+  font-size: 14px;
+}
+
+.timer-text {
+  color: #475569;
+}
+
+.timer-count {
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+.btn-resend {
+  background: none;
+  border: none;
+  color: #4338CA;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.btn-resend:disabled {
+  color: #64748B;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-resend:hover:not(:disabled) {
+  text-decoration: underline;
+  color: #4F46E5;
+}
+

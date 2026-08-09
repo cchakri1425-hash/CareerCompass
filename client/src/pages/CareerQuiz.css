@@ -1,0 +1,213 @@
+.quiz-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.quiz-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+  color: #4F46E5;
+  font-weight: 700;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #C7D2FE;
+}
+
+.quiz-header h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #0F172A;
+}
+
+.quiz-header p {
+  color: #64748B;
+  font-size: 1.05rem;
+}
+
+.quiz-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.08);
+  transition: var(--transition-fast);
+}
+
+.quiz-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #E2E8F0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: var(--gradient-primary, linear-gradient(90deg, #2563EB, #4F46E5, #7C3AED));
+  transition: width 0.4s ease;
+}
+
+.quiz-step-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748B;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-question-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 1.75rem;
+}
+
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quiz-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+  font-size: 1rem;
+  color: #0F172A;
+}
+
+.quiz-option-btn:hover {
+  border-color: #C7D2FE;
+  background: #F8FAFF;
+  transform: translateY(-1px);
+}
+
+.quiz-option-btn.selected {
+  border-color: #4F46E5;
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.1);
+}
+
+.option-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.quiz-option-btn.selected .option-num {
+  background: var(--gradient-primary, linear-gradient(135deg, #2563EB, #4F46E5, #7C3AED));
+  color: #ffffff;
+}
+
+.quiz-nav-row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-quiz-prev {
+  background: #ffffff;
+  border: 1.5px solid #4F46E5;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #4F46E5;
+  transition: var(--transition-fast);
+}
+
+.btn-quiz-prev:hover {
+  background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+}
+
+.quiz-result-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.08);
+}
+
+.result-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-result-card h2 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.result-sub {
+  color: #64748B;
+  margin-bottom: 2rem;
+}
+
+.result-main-box {
+  background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%);
+  border: 1px solid #C7D2FE;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.res-tag {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(135deg, #2563EB, #4F46E5, #7C3AED));
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.result-main-box h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.result-main-box p {
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+.result-actions-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
